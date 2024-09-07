@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // local storage :permanent , 
+    // memory (RAM):temporary
+    // dont store sensitive info in local storage
+    let product = {
+      name:'art',
+      price:789,
+      rating:{
+        stars:4.5,
+        noOfReviews:453,
+      },
+    };
+    // set and get item in local storage 
+    localStorage.setItem('product',JSON.stringify(product) );
+    console.log(localStorage.getItem('product'));
+    let product2 = JSON.parse(localStorage.getItem('product'));
+    console.log(product2);
+
+    // clear() and removeItem()
+      localStorage.removeItem('Price');
+
+
+    // practice
+    localStorage.setItem('name', 'Craft bugg');
+    localStorage.setItem('product', 'wall hanging');
+    console.log(localStorage.getItem('name'));
+    localStorage.removeItem('product');
+    localStorage.clear();
+  </script>
+
+  
+</body>
+</html>

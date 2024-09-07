@@ -1,0 +1,60 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  background-repeat: no-repeat;
+  height: 92vh;
+}
+@keyframes golden-blink {
+        0%, 100% { 
+            color: transparent;
+            background-size: 200% 100%;
+            background-position: left;
+        }
+        50% { 
+            color: transparent;
+            background-position: right;
+        }
+    }
+#main-heading{
+  text-align: center; 
+  font-size: 72px;
+  background: linear-gradient(to right, rgb(243, 134, 104), rgb(124, 63, 37), rgb(65, 2, 2));
+        -webkit-background-clip: text; /* For Safari */
+        color: transparent;
+        background-size: 200% 100%;
+        animation: golden-blink 2s infinite;
+  
+}
+/*todo conatiner  */
+.grid-container{
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 20px;
+  row-gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+}   
+#todo-input,#todo-date{
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px,5px;
+} 
+/* button css */
+.btn-todo{
+  background-color: rgb(16, 2, 83);
+  color: white;
+  border:none;
+  border-radius: 10px;
+  padding: 15px 0px;
+  cursor: pointer;
+  
+
+}
+.btn-delete{
+  background-color: rgb(239, 116, 64);
+  color: white;
+  border:none;
+  border-radius: 10px;
+  padding: 15px 0px;
+  cursor: pointer;
+} 

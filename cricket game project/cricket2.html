@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+ </head>
+ 
+
+
+  <script>
+    // function isOdd(number){
+    //   let rem = number%2;
+    //   let isOdd = rem==1;
+    //   return isOdd;
+
+    // }
+    // console.log(isOdd(9));
+
+    let product = {
+      company:'craft bugg',
+      owner: 'Nandini',
+      items: ' art and craft',
+      'item-name': 'wall hanging',
+      price: 899,
+      // nested object
+      ratings:{
+        stars: 4.5,
+        noofViews:100,
+      },
+      displayPrice: function() {
+       console.log(`price of product is ${this.price} `)
+      }
+    }; 
+    product.displayPrice();
+    console.log(product);
+    // dot notation to access
+    console.log(product.company); 
+    console.log(product.owner); 
+    console.log(product.items);
+
+    product.owner ='NANDINI BHARDWAJ',
+    //bracket notation to access
+    console.log(product['owner']);
+    console.log(product['item-name']);
+    console.log(product);
+    
+ 
+
+
+ 
+
+  </script>
+ </body>
+ </html>
